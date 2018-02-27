@@ -1,0 +1,20 @@
+{
+	"name": "ProxyがDNSエラーでもHTTPレスポンスする場合に通信を切断する",
+	"version": "0.1.0",
+	"manifest_version": 2,
+
+	"description": "ブラウザの履歴に残らないようにするため",
+
+	"permissions": [
+		"notifications",
+		"webRequest",
+		"webRequestBlocking",
+		"*://*/*"
+	],
+
+	"background": {
+		"scripts": [
+			"background.js"
+		]
+	}
+}
